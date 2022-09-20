@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Ceils Game</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Игра угадай ячейку</h1>
+        <p>
+          В этой игре будет дана таблица 10 на 10. Компьютер случайным образом
+          запоминает 10 ячеек из этой таблицы. Игроку нужно кликать на клетки
+          пока он не найдет все загаданные компьютером клетки.
+        </p>
+        <div class="choices">
+          <h2>Выбор таблицы</h2>
+          <div class="choice-inputs-block">
+            <p>ширина
+              <input type="number" class="table-choice-input width-choice" min="2" max="10" required/>
+            </p>
+            <p>высота
+              <input type="number" class="table-choice-input height-choice" min="2" max="10" required />
+            </p>
+          </div>
+          <button class="choose-ceils-btn command-btn">Hачнём!</button>
+        </header>
+        <main>
+          <table class="ceil-table"></table>
+          <button class="restart-btn command-btn">Вернуться назад</button>
+          <div class="message"></div>
+        </div>
+      </main>
+    <script src="script.js"></script>
+  </body>
+</html>
